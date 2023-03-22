@@ -1,0 +1,58 @@
+version control:
+
+Git hub:open source version control tool.
+
+
+Generating ssh key
+1)open git bash anywhere in system.
+2)ssh-keygen -t ed25519 -C "your_email@example.com"
+  note:please just give enter for everything till u 
+  get the key.
+
+3)check ssh agent
+   eval "$(ssh-agent -s)"
+4)add identity
+   ssh-add ~/.ssh/id_ed25519
+5)copy ssh key 
+    cat < ~/.ssh/id_ed25519.pub
+
+-------------------------------------------------------------------------------------
+
+git clone https/ssh :create local repo with the help
+of https or ssh url of remote repo.
+
+
+git clone:
+   To clone remote repo to system(creating local repo)
+Syntax:git clone ssh/https url
+(1 time process)
+
+Note:While using below commands plz open git bash
+in the local repo only.
+git pull:
+   Get updates from remote repo to local repo.
+git status:
+    to check the status of local repo.
+
+git config --global user.email "you@example.com"
+git config --global user.email "darshanclassic8@gmail.com"
+
+git config --global user.name "Your Name"
+git config --global user.name "CodePhoenix08"
+
+Note:If u wanna add file or any updation to remote
+repo from local repo below three cmds are compuslory
+
+git add file_name or git add -A
+       This command is used add file to the path.
+git commit -m"message"
+    This command is used to save the file in the path.
+giit.. push..
+   This command is used to push the files into remote
+repo which are present in the path.
+
+git branch <branchname>
+      ->creates new branch 
+git checkout branchname
+      ->switch the branch  
+
