@@ -1,0 +1,9 @@
+To Deploy React JS project on git Hub
+1) npm install gh-pages --save-dev
+2) git remote add origin "Add Link of git hub repo" (https://github.com/Yousurya/Anime.git)
+2.1) Update this in package,json
+	"homepage": "https://yousurya.github.io/Text-Utility",
+	AND INCLUDE THIS IN SCRIPTS 
+	"predeploy": "npm run build",
+    	"deploy": "gh-pages -d build",
+3) npm run deploy

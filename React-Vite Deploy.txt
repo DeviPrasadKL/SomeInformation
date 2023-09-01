@@ -1,0 +1,7 @@
+To deploy React + Vite project on Git hub
+1) Connect your repo to ur project and push all the code into it
+2) vite.config.js > add base:"/SignIn-SignUp-Pages/"
+3) npm run build
+4) git add dist -f
+5) git commit -m "msg"
+6) git subtree push --prefix dist origin gh-pages
