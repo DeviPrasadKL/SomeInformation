@@ -7,3 +7,15 @@ To Deploy React JS project on git Hub
 	"predeploy": "npm run build",
     	"deploy": "gh-pages -d build",
 3) npm run deploy
+---------------------------------------------------------------------------------------------------------
+To install tailwind CSS 
+1) npm install -D tailwindcss
+2) npx tailwindcss init
+3) content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  Add this in tailwind.config
+4)  @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+Add these in index.css
