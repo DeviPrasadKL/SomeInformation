@@ -5,3 +5,20 @@ To deploy React + Vite project on Git hub
 4) git add dist -f
 5) git commit -m "msg"
 6) git subtree push --prefix dist origin gh-pages
+-------------------------------------------------------------------------------------------------
+To create React + vite app 
+1) npm create vite@latest
+-------------------------------------------------------------------------------------------------
+To install tailwind CSS 
+1) npm install -D tailwindcss postcss autoprefixer
+2) npx tailwindcss init -p
+3) content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  Add this in tailwind.config
+4)  @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+Add these in index.css
+-------------------------------------------------------------------------------------------------
