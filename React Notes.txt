@@ -44,6 +44,7 @@ npx json-server --watch db.json --port 4000
 When we have wrong api then we will get an empty data ( i.e, {} )
  --------------------------------------------------------
 npm install  react-router-dom@5
+or we can just install latest react-router-dom
 
  ------Default object adding to database-----------------
  let handleAddMovie = (e) => {
