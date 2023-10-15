@@ -38,7 +38,7 @@ Output:- 1 2 3 4 5 one by one
 To start json server:-(need net)
 npx json-server --watch db.json
 
-TO hoist on different port number
+TO host on different port number
 npx json-server --watch db.json --port 4000
 ----------------------------------------------------------
 When we have wrong api then we will get an empty data ( i.e, {} )
