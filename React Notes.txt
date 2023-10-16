@@ -71,7 +71,7 @@ How to use Axios:-
 1) npm install axios --save
 2) import axios
 3) axios.get("url").then(res => {
-}).catch(err =>{
+	}).catch(err =>{
 })
  -----------------------------------------------------------
 To Deploy React JS project on git Hub
