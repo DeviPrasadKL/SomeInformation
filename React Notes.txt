@@ -55,8 +55,8 @@ or we can just install latest react-router-dom
     const api = "http://localhost:400/movies";
 
     const options = {method:"POST", 
-                    headers:{"Content-Type":"applicaton/json"},
-                    body:JSON.stringify(newMovie)
+                       headers:{"Content-Type":"applicaton/json"},
+                       body:JSON.stringify(newMovie)
                     }
                 
     fetch(api,options)
