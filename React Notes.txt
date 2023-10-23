@@ -1,6 +1,5 @@
 Create React applicaton
 npx create-react-app my-app
-
 --------------------------------------------------------
 
 Document which returns JSX (JavaScript + XML(Extensible markup language)) is called as Component
