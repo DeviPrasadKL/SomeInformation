@@ -2,6 +2,7 @@ Create React applicaton
 npx create-react-app my-app
 --------------------------------------------------------
 
+
 Document which returns JSX (JavaScript + XML(Extensible markup language)) is called as Component
 In JSX we can create customized tags
 JSX is a special value, since Node js will not understand jsx value, we use Babble to convert that to normal value
