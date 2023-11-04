@@ -2,7 +2,7 @@ version control:
 
 Git hub:open source version control tool.
 
-
+-----------------------------Generate SSH key in windows laptop------------------------------------------
 Generating ssh key
 1)open git bash anywhere in system.
 2)ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -51,8 +51,16 @@ giit.. push..
    This command is used to push the files into remote
 repo which are present in the path.
 
+-----------------------------Branch create and change branch------------------------------------------
 git branch <branchname>
       ->creates new branch 
 git checkout branchname
       ->switch the branch  
+
+-----------------------------Git Revert Changes------------------------------------------
+1) git checkout -b new-branch-name
+2) git revert <commit-hashCode>
+(Eg:-  git revert abc1234)
+3) git push origin new-branch-name
+
 
