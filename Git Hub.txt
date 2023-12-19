@@ -2,7 +2,6 @@ version control:
 
 Git hub:open source version control tool.
 
-
 -----------------------------Generate SSH key in windows laptop------------------------------------------
 
 Generating ssh key
@@ -17,6 +16,12 @@ Generating ssh key
    ssh-add ~/.ssh/id_ed25519
 5)copy ssh key 
     cat < ~/.ssh/id_ed25519.pub
+
+-----------------------------Generate SSH key in Linux------------------------------------------
+1) ssh-keygen -t rsa
+----Yes to all----
+2) cat /home/(public key file path)
+Eg:- Your public key has been saved in /home/frappe/.ssh/id_rsa.pub 
 
 -------------------------------------------------------------------------------------
 
