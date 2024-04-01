@@ -4,7 +4,7 @@ npm create vite@latest
 
 To deploy React + Vite project on Git hub
 1) Connect your repo to ur project and push all the code into it
-2) vite.config.js > add base:"/Repo_name/"
+2) vite.config.js -> add this -> base:"/Repo_name/"
 3) npm run build
 4) git add dist -f
 5) git commit -m "msg"
