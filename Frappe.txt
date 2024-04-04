@@ -1,0 +1,9 @@
+Uninstall and install app in frappe:-
+    bench uninstall-app appname --no-backup
+    bench remove-app appname
+    bench get-app Git_repo_clone_link
+    bench build --app appname
+    bench install-app appname
+    bench migrate
+    bench clear-cache
+    sudo supervisorctl restart all
