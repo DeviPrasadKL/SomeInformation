@@ -10,3 +10,9 @@
 6) Install serve
     npm i serve --global
 7) git clone (your repo)
+8) npm install (also build if not built)
+    Before accesing website using piblic ip expose port 3000 and 80
+9) serve -s build (This run like run dev)
+10) pm2 serve build {portnumber} --spa
+    Eg:- pm2 serve build 80 --spa
+11) pm2 stop {id}
