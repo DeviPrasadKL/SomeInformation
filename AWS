@@ -1,0 +1,12 @@
+1) Launch instance and connect to instance
+2) sudo su
+3) yum install git 
+4) Install node js 
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+    source ~/.bashrc
+    nvm install --lts
+5) Install PM2
+    npm i pm2
+6) Install serve
+    npm i serve --global
+7) git clone (your repo)
