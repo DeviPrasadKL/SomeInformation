@@ -15,4 +15,5 @@
 9) serve -s build (This run like run dev)
 10) pm2 serve build {portnumber} --spa
     Eg:- pm2 serve build 80 --spa
+    for vite :- pm2 serve
 11) pm2 stop {id}
