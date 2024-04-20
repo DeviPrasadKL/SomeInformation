@@ -13,7 +13,7 @@
 8) npm install (also build if not built)
     Before accesing website using piblic ip expose port 3000 and 80
 9) serve -s build (This run like run dev)
-    for vite :- 
+    for vite :- serve 
 10) pm2 serve build {portnumber} --spa
     Eg:- pm2 serve build 80 --spa
     for vite :- pm2 serve dist 80 --spa
