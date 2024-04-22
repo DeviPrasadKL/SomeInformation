@@ -1,3 +1,4 @@
+--------------For React app--------------------------
 1) Launch instance and connect to instance
 2) sudo su
 3) yum install git 
@@ -18,3 +19,17 @@
     Eg:- pm2 serve build 80 --spa
     for vite :- pm2 serve dist 80 --spa
 11) pm2 stop {id}
+
+--------------For Static web pages--------------------------
+(super user)
+
+1) yum update -y
+2) yum install -y httpd
+3) systemctl status httpd (to check status)
+4) git clone (ur repo) --> cd (ur repo)
+5) mv * /var/www/html/
+    if Apache server is not started then
+        systemctl enable httpd
+        systemctl start httpd
+6) open public ip
+    systemctl stop httpd
