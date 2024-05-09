@@ -1,0 +1,8 @@
+React Native APK creation using EXPO
+
+1) npx eas-cli@latest 
+    Run the above command in super user mode 
+2) eas login (if not Logged in)
+3) eas build:configure
+3) eas build --platform android
+4) download the AAB file and convert aab to apk file in mobile/pc
