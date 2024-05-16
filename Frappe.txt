@@ -7,3 +7,9 @@ Uninstall and install app in frappe:-
     bench migrate
     bench clear-cache
     sudo supervisorctl restart all
+
+    Installation :- 
+    https://discuss.frappe.io/t/guide-how-to-install-erpnext-v15-on-linux-ubuntu-step-by-step-instructions/111706
+
+    D-code
+    https://github.com/D-codE-Hub/Frappe-ERPNext-Version-15--in-Ubuntu-22.04-LTS?tab=readme-ov-file
