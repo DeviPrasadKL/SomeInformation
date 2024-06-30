@@ -3,4 +3,4 @@
 - npm run web
 
 - npx expo start 
-for scanner
+for scanner in mobile
