@@ -1,3 +1,6 @@
+Install app in frappe
+    bench new-app appname
+
 Uninstall and install app in frappe:-
     bench uninstall-app appname --no-backup
     bench remove-app appname
@@ -7,6 +10,11 @@ Uninstall and install app in frappe:-
     bench migrate
     bench clear-cache
     sudo supervisorctl restart all
+
+React application creation
+    bench get-app https://github.com/NagariaHussain/doppio
+    bench add-spa
+    app name = recently added app,
 
     Installation :- 
     https://discuss.frappe.io/t/guide-how-to-install-erpnext-v15-on-linux-ubuntu-step-by-step-instructions/111706
