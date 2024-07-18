@@ -1,0 +1,4 @@
+1) Step 1:- 
+sudo sysctl fs.inotify.max_user_watches=524288
+2) Step 2:-
+cat /proc/sys/fs/inotify/max_user_watches
