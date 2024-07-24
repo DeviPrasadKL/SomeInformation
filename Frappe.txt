@@ -11,6 +11,9 @@ Uninstall and install app in frappe:-
     bench clear-cache
     sudo supervisorctl restart all
 
+    frappe aws deployment:-
+    https://codewithkarani.com/2022/08/18/install-erpnext-version-14/
+
 React application creation
     bench get-app https://github.com/NagariaHussain/doppio
     bench add-spa
