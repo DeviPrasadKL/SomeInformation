@@ -1,7 +1,6 @@
-To install react-vite
-npm create vite@latest
-
-
+To create React + vite app 
+1) npm create vite@latest
+-------------------------------------------------------------------------------------------------
 To deploy React + Vite project on Git hub
 1) Connect your repo to ur project and push all the code into it
 2) vite.config.js -> add this -> base:"/Repo_name/"
@@ -9,9 +8,6 @@ To deploy React + Vite project on Git hub
 4) git add dist -f
 5) git commit -m "msg"
 6) git subtree push --prefix dist origin gh-pages
--------------------------------------------------------------------------------------------------
-To create React + vite app 
-1) npm create vite@latest
 -------------------------------------------------------------------------------------------------
 To install tailwind CSS 
 1) npm install -D tailwindcss postcss autoprefixer
