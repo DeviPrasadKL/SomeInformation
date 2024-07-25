@@ -1,4 +1,4 @@
-To Deploy React JS project on git Hub
+-----------------------------------------Deploying A React Project On Git HUb----------------------------
 1) npm install gh-pages --save-dev
 2) git remote add origin "Add Link of git hub repo" (https://github.com/Yousurya/Anime.git)
 2.1) Update this in package,json
@@ -8,7 +8,7 @@ To Deploy React JS project on git Hub
     	"deploy": "gh-pages -d build",
 3) npm run deploy
 
----------------------------------------------------------------------------------------------------------
+-----------------------------------------Tailwind Installation-------------------------------------------
 To install tailwind CSS 
 1) npm install -D tailwindcss
 2) npx tailwindcss init
