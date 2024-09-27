@@ -24,3 +24,7 @@ React application creation
 
     D-code
     https://github.com/D-codE-Hub/Frappe-ERPNext-Version-15--in-Ubuntu-22.04-LTS?tab=readme-ov-file
+
+Scheduler:-
+bench disable-scheduler
+bench enable-scheduler
