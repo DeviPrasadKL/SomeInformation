@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Example</title>
+    <!-- Load Socket.IO client from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+
+<body>
+    <h1>Socket.IO Connection Example</h1>
+    <div>
+        <button id="connectBtn">Connect to Server</button>
+        <button id="joinRoomBtn" disabled>Join Room</button> <!-- Button to join room -->
+        <button id="sendMessageBtn" disabled>Send Message</button>
+    </div>
+    <div>
+        <h3>Messages:</h3>
+        <div id="messages"></div>
+    </div>
+
+    <script>
+        let socket;
+        let room = '6d5c6681-9ef9-4ee9-9d78-d324a8193057'; // Predefined room ID
+
+        const messagesDiv = document.getElementById('messages');
+        const connectBtn = document.getElementById('connectBtn');
+        const joinRoomBtn = document.getElementById('joinRoomBtn'); // New join room button
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+
+        // Function to display messages
+        function displayMessage(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = message;
+            messagesDiv.appendChild(messageDiv);
+        }
+
+        // When the user clicks the "Connect" button
+        connectBtn.addEventListener('click', function () {
+            // Connect to the server via Socket.IO
+            socket = io("http://localhost:9007", {
+                transports: ["websocket", "polling"],
+                path: '/socket.io',
+            });
+
+            // When the client connects to the server
+            socket.on('connect', function () {
+                displayMessage('Connected to WebSocket server.');
+                joinRoomBtn.disabled = false;  // Enable join room button
+                sendMessageBtn.disabled = false;  // Enable send message button
+            });
+
+            // When the client receives a message from the server
+            socket.on('message', function (data) {
+                displayMessage('Received from server: ' + data);
+            });
+
+            // When the client disconnects from the server
+            socket.on('disconnect', function () {
+                displayMessage('Disconnected from server.');
+                joinRoomBtn.disabled = true; // Disable the join room button when disconnected
+                sendMessageBtn.disabled = true; // Disable the send message button
+            });
+        });
+
+        // When the user clicks the "Join Room" button
+        joinRoomBtn.addEventListener('click', function () {
+            if (socket) {
+                // Emit an event to the server to join a specific room
+                socket.emit("join_room", room, (response) => {
+                    displayMessage(`Joined room: ${room}`);
+                    console.log(response); // Server response (optional)
+                });
+            }
+        });
+
+        // When the user clicks the "Send Message" button
+        sendMessageBtn.addEventListener('click', function () {
+            if (socket) {
+                let message = 'Hello from the client!';
+                // Emit the message specifically to the room
+                socket.emit("send_message_from_guest", room, message);
+
+                displayMessage('Sent to server: Hello from the client!');
+            }
+        });
+    </script>
+</body>
+
+</html>
