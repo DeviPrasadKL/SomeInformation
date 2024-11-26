@@ -1,0 +1,7 @@
+1) Create a Dockerfile in your react app
+2) Add this in package.json
+      "dev": "vite --host 0.0.0.0",
+3) Ensure Docker engine is running, check docker version as well "docker --version"
+4) docker build -t {container name} .
+5) docker images (This will check all the images)
+6) docker run -p {container name}
