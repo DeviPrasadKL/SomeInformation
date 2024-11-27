@@ -43,3 +43,8 @@ Feel free to explore and leverage the information provided to enhance your devel
     - Command to create React + vite app
     - How to deploy React + Vite project on Git hub
     - To install tailwind CSS
+
+9) Socket IO
+    - Complete guide to setup socket io on client side
+    - The server.js file explains how to connect to a socket and join a room. Within room emiting messages and receiving message.
+    - Socket IO setup from server side, how to join a particular room, how to broadcast a message to everyone.(Upcoming)
