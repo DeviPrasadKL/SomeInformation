@@ -23,6 +23,12 @@ Generating ssh key
 2) cat /home/(public key file path)
 Eg:- Your public key has been saved in /home/frappe/.ssh/id_rsa.pub 
 
+-----------------------------Generate SSH key in Mac OS------------------------------------------
+1) ssh-keygen -b 4096 -t rsa
+----Yes to all----
+2) pbcopy < ~/.ssh/id_rsa.pub
+   ssh key will be copied to your clipboard.
+
 -------------------------------Basic Git Commands------------------------------------------------------
 
 git clone https/ssh :create local repo with the help
