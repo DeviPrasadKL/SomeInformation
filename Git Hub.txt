@@ -29,6 +29,11 @@ Eg:- Your public key has been saved in /home/frappe/.ssh/id_rsa.pub
 2) pbcopy < ~/.ssh/id_rsa.pub
    ssh key will be copied to your clipboard.
 
+
+-------------------------------Change remote url of repository------------------------------------------------------
+
+git remote set-url origin <NEW_GIT_URL_HERE>
+
 -------------------------------Basic Git Commands------------------------------------------------------
 
 git clone https/ssh :create local repo with the help
