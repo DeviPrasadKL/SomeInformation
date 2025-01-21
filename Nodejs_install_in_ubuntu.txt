@@ -1,3 +1,11 @@
 Refer this website:- 
 
 https://linuxconfig.org/how-to-install-node-js-on-ubuntu-24-04
+
+Using NVM:-
+
+wget -q -O- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+. ~/.bashrc
+nvm --version
+nvm install node
+sudo apt install npm
