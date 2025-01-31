@@ -1,6 +1,12 @@
+----------------------------------------------------------------------------------------------------
+Quick Installation of frappe and erpnext
+
+https://github.com/flexcomng/erpnext_quick_install.git
+
+----------------------------------------------------------------------------------------------------
 Install app in frappe
     bench new-app appname
-
+----------------------------------------------------------------------------------------------------
 Uninstall and install app in frappe:-
     bench uninstall-app appname --no-backup
     bench remove-app appname
@@ -13,6 +19,7 @@ Uninstall and install app in frappe:-
 
     frappe aws deployment:-
     https://codewithkarani.com/2022/08/18/install-erpnext-version-14/
+----------------------------------------------------------------------------------------------------
 
 React application creation
     bench get-app https://github.com/NagariaHussain/doppio
@@ -25,6 +32,7 @@ React application creation
     D-code
     https://github.com/D-codE-Hub/Frappe-ERPNext-Version-15--in-Ubuntu-22.04-LTS?tab=readme-ov-file
 
+----------------------------------------------------------------------------------------------------
 Scheduler:-
 bench disable-scheduler
 bench enable-scheduler
