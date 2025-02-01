@@ -3,6 +3,13 @@ Quick Installation of frappe and erpnext
 
 https://github.com/flexcomng/erpnext_quick_install.git
 
+Steps:
+sudo apt update && sudo apt -y upgrade
+git clone https://github.com/flexcomng/erpnext_quick_install.git
+cd erpnext_quick_install
+chmod +x erpnext_install.sh
+source erpnext_install.sh
+
 ----------------------------------------------------------------------------------------------------
 Install app in frappe
     bench new-app appname
