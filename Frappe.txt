@@ -11,6 +11,11 @@ chmod +x erpnext_install.sh
 source erpnext_install.sh
 
 ----------------------------------------------------------------------------------------------------
+Back up restore 
+create "backups" folder inside frappe bench
+bench restore backups/ur_file_name
+
+----------------------------------------------------------------------------------------------------
 Install app in frappe
     bench new-app appname
 ----------------------------------------------------------------------------------------------------
