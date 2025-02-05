@@ -48,3 +48,8 @@ React application creation
 Scheduler:-
 bench disable-scheduler
 bench enable-scheduler
+
+----------------------------------------------Host name change-------------------------------------------------
+hostname
+hostnamectl
+hostnamectl set-hostname new-hostname
