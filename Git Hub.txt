@@ -74,6 +74,8 @@ git branch <branchname>
       ->creates new branch 
 git checkout branchname
       ->switch the branch  
+git remote add origin (Your git ssh or http url)
+      - set remote origin for that branch
 
 -----------------------------Git Revert Changes------------------------------------------
 1) git checkout -b new-branch-name
